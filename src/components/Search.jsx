@@ -1,4 +1,4 @@
-const Search = ({ searchTerm, setSetSearchTerm }) => {
+const Search = ({ searchTerm, setSearchTerm }) => {
 	return (
 		<div className="search">
 			<div>
@@ -8,9 +8,9 @@ const Search = ({ searchTerm, setSetSearchTerm }) => {
 				/>
 				<input
 					type="text"
-					placeholder="Search through tousands of movies 🎥"
+					placeholder="Search through tousands of movies"
 					value={searchTerm}
-					onChange={(e) => setSetSearchTerm(e.target.value)}
+					onChange={(e) => setSearchTerm(e.target.value)}
 				/>
 			</div>
 		</div>
